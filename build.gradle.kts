@@ -30,7 +30,7 @@ repositories {
 
 // TODO: Figure out exclusions because this is a mess.
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT") {
+    compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT") {
 		exclude("com.google.code.gson", "gson")
 	}
 
@@ -136,6 +136,3 @@ publishing {
         }
     }
 }
-
-
-

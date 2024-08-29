@@ -55,7 +55,7 @@ public class SetCommand implements SubCommand {
 			breweryPlugin.msg(sender, breweryPlugin.languageReader.get("CMD_Set", args[1], String.valueOf(drunkenness), String.valueOf(quality)));
 
 			// Stop long nausea effects when drunkenness is 0
-			if (drunkenness == 0) target.removePotionEffect(PotionEffectType.CONFUSION);
+			if (drunkenness == 0) target.removePotionEffect(PotionEffectType.NAUSEA);
 
 		}
 

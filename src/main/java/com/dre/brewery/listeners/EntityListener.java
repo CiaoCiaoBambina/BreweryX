@@ -38,7 +38,7 @@ public class EntityListener implements Listener {
 	public void onEntityCombust(EntityCombustEvent event) {
 		if (Brew.noLegacy()) return;
 		Entity entity = event.getEntity();
-		if (entity.getType() == EntityType.DROPPED_ITEM) {
+		if (entity.getType() == EntityType.ITEM) {
 			if (entity instanceof Item) {
 				ItemStack item = ((Item) entity).getItemStack();
 				if (item.getType() == Material.POTION) {
@@ -52,6 +52,7 @@ public class EntityListener implements Listener {
 
 	@EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
 	public void onExplode(EntityExplodeEvent event) {
+		if (event.getEntity().getType() == EntityType.WIND_CHARGE || event.getEntity().getType() == EntityType.BREEZE_WIND_CHARGE) return;
 		ListIterator<Block> iter = event.blockList().listIterator();
 		if (!iter.hasNext()) return;
 		List<BarrelDestroyEvent> breakEvents = new ArrayList<>(6);
