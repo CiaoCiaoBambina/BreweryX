@@ -23,7 +23,7 @@ storage:
 # Fichier de langue à utiliser (trouvable dans plugins/Brewery/languages)
 language: fr
 
-# Activer la cherche de mises à jour.  Cherche l'API CurseForge pour les mises à jour. [true]
+# Activer la cherche de mises à jour.  Cherche l’API CurseForge pour les mises à jour. [true]
 # Si une mise à jour est trouvé, un message sera enregistré lors du démarage du serveur.  Il sera également affiché aux joueurs OP quand ils se connectent.
 updateCheck: true
 
@@ -46,21 +46,21 @@ enableHome: true
 # 'cmd: whatever' = /whatever sera exécuté par le joueur. (Peu importe)
 homeType: 'cmd: home'
 
-# Si le joueur se « réveille » à un point aléatoire sur la carte à sa connexion, pendant un excès d'alccol (Les points de réveil doivent être ajoutés avec '/brew Wakeup add' via un administrateur.)
+# Si le joueur se « réveille » à un point aléatoire sur la carte à sa connexion, pendant un excès d’alccol (Les points de réveil doivent être ajoutés avec '/brew Wakeup add' via un administrateur.)
 # Le joueur se réveillera aléatoirement parmis les deux points de « réveil » les plus proches de lui [true]
 enableWake: true
 
-# Si le joueur reçoit des connexions refusées au serveur s'il est ivre. [true]
+# Si le joueur reçoit des connexions refusées au serveur s’il est ivre. [true]
 enableLoginDisallow: true
 
-# Si le joueur s'évanouit (il sera kické) lorsqu'il boit trop d'alcool [false]
+# Si le joueur s’évanouit (il sera kické) lorsqu’il boit trop d’alcool [false]
 enableKickOnOverdrink: false
 
-# Si le joueur vomit en cas d'alcoolémie élevée (Le type d'objet « droppé » est configurable en dessous) [true]
-# L'objet ne peut pas être collecté et reste sur le sol jusqu'à ce qu'il disparaisse
+# Si le joueur vomit en cas d’alcoolémie élevée (Le type d’objet « droppé » est configurable en dessous) [true]
+# L’objet ne peut pas être collecté et reste sur le sol jusqu’à ce qu’il disparaisse
 enablePuke: true
 
-# L'objet utilisé pour représenter le vomi [Soul_Sand]
+# L’objet utilisé pour représenter le vomi [Soul_Sand]
 pukeItem: [Soul_Sand]
 
 # Le temps, en secondes, avant que les objets vomi seront supprimé (le défaut de Minecraft est 300 secondes (5 minutes)). [60]
@@ -70,10 +70,10 @@ pukeDespawntime: 60
 # Par combien, en pourcentage, le joueur trébuches, en fonction de son ivresse.  Peut être 0 et même une figure au-delà de 100 [100]
 stumblePercent: 100
 
-# Permet le joueur de voir son ivresses lorsqu'il boit une boisson ou lorsqu'il consomme un « drainItem ». [true]
+# Permet le joueur de voir son ivresses lorsqu’il boit une boisson ou lorsqu’il consomme un « drainItem ». [true]
 showStatusOnDrink: true
 
-# Consommables 'objet/force'. Réduit le montant d'alcool par <force> lors de la consommation. (liste)
+# Consommables 'objet/force'. Réduit le montant d’alcool par <force> lors de la consommation. (liste)
 drainItems:
   - Bread/4
   - Milk_Bucket/2
@@ -92,10 +92,10 @@ enableSealingTable: true
 # IMPORTANT : Il est nécessaire que le bloc choisi est un conteneur — signifiant un bloc qui peur stocker des objets (e.g., SMOKER, CHEST, BLAST_FURNACE).
 sealingTableBlock: SMOKER
 
-# Toujours montrer les 1-5 étoiles sur les objets en fonction de leur qualité. S'ils sont faux, ils n'apparaîtront que lors de l'infusion. [true]
+# Toujours montrer les 1-5 étoiles sur les objets en fonction de leur qualité. S’ils sont faux, ils n’apparaîtront que lors de l’infusion. [true]
 alwaysShowQuality: true
 
-# Toujours indiquer la teneur en alcool sur les objets. S'il est false, il n'apparaîtra que dans le stand de brassage. [false]
+# Toujours indiquer la teneur en alcool sur les objets. S’il est false, il n’apparaîtra que dans le stand de brassage. [false]
 alwaysShowAlc: false
 
 # If we should show who brewed the drink [false]
@@ -108,12 +108,12 @@ requireKeywordOnSigns: true
 ageInMCBarrels: true
 maxBrewsInMCBarrels: 6
 
-# Durée (en minutes) d'une « année » pour la maturation des boissons [20]
+# Durée (en minutes) d’une « année » pour la maturation des boissons [20]
 agingYearDuration: 20
 
 # Les ingrédients et autres données de brassage utilisés sont sauvegardés dans tous les articles de brasserie. [false]
 # Pour empêcher les clients piratés de lire exactement ce qui a été utilisé pour infuser un élément, les données peuvent être encodées/brouillées.
-# Il s'agit d'un processus rapide pour empêcher les joueurs de pirater des recettes, une fois qu'ils mettent la main sur une bière.
+# Il s’agit d’un processus rapide pour empêcher les joueurs de pirater des recettes, une fois qu’ils mettent la main sur une bière.
 # Seul inconvénient: Les boissons brassicoles ne peuvent être utilisés que sur un autre serveur avec la même clé de chiffrement.
 # Lorsque vous utilisez des boissons brassicoles sur plusieurs serveurs (BungeeCord), définissez une base de données partagée ci-dessous à « multiServerDB ».
 # Activez cette option si vous voulez rendre la tricherie des recettes plus difficile, mais ne partagez pas les infusions par téléchargement mondial, schémas ou autres moyens.
@@ -122,12 +122,12 @@ encodeKey: 0
 
 
 # -- Définir des objets personnalisés --
-# L'id défini peut ensuite être utilisé dans les recettes
+# L’ID défini peut ensuite être utilisé dans les recettes
 
-#  matchAny: si c'est déjà assez si l'une des infos correspond
-#  material: le type d'article à utiliser
-#  name: Quel nom l'article doit porter (codes de formatage possibles : tels que &6)
-#  lore: Ce qui doit être dans la lore de l'objet
+#  matchAny: si c’est déjà assez si l’une des infos correspond
+#  material: le type d’article à utiliser
+#  name: Quel nom l’article doit porter (codes de formatage possibles : tels que &6)
+#  lore: Ce qui doit être dans la lore de l’objet
 #  customModelData: Custom Model Data Int. Whatever Model data number the item has to have in a list format
 customItems:
   # Trois exemples
@@ -140,7 +140,7 @@ customItems:
 
   ex-item2:
     # En utilisant matchAny, un seul des éléments suivants doit correspondre.
-    # Dans ce cas, l'un des types de porte, ou un article appelé « Beechwood Door », ou un objet avec « A door » dans sa lore.
+    # Dans ce cas, l’un des types de porte, ou un article appelé « Beechwood Door », ou un objet avec « A door » dans sa lore.
     matchAny: true
     material:
       - Acacia_Door
@@ -169,24 +169,24 @@ customItems:
 
 # -- Ingrédients dans le chaudron --
 # Quels sont les ingrédients acceptés par le chaudron et la potion de base qui en résulte
-# Il vous suffit d'ajouter quelque chose ici si vous voulez spécifier un nom ou une couleur pour la potion de base
+# Il vous suffit d’ajouter quelque chose ici si vous voulez spécifier un nom ou une couleur pour la potion de base
 
  # name : Nom de la potion de base qui sort du chaudron (codes de formatage possibles : tels que &6)
  # ingredients : Liste des 'matériaux/montant'
  #   Avec un objet en main, utilisez /brew ItemName pour obtenir son matériau pour une recette de cuisine
- #   (Les id d'objets à la place des matériaux sont obsolètes pour bukkit)
+ #   (Les id d’objets à la place des matériaux sont obsolètes pour bukkit)
  #   Une liste des matériaux peuvent-être trouvés ici : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
- # color : Couleur de la potion provenant d'un chaudron.
+ # color : Couleur de la potion provenant d’un chaudron.
  #   Couleurs disponibles : DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
- #     (Dans l'ordre : Rouge foncé, Rouge, Rouge clair, Orange, Jaune, Rose, Pourpre, Bleu, Cyan, Eau, Sarcelle, Olive, Vert, Vert lime, Noir, Gris, Gris clair, Blanc)
- #   Ou couleurs RGB (hex : par exemple '99FF33') (avec '') (recherchez « couleur HTML » sur l'internet)
+ #     (Dans l’ordre : Rouge foncé, Rouge, Rouge clair, Orange, Jaune, Rose, Pourpre, Bleu, Cyan, Eau, Sarcelle, Olive, Vert, Vert lime, Noir, Gris, Gris clair, Blanc)
+ #   Ou couleurs RGB (hex : par exemple '99FF33') (avec '') (recherchez « couleur HTML » sur l’internet)
  # cookParticles :
  #   Couleurs des particules suspendus en haut du chaudron à des heures de bouillonnement spécifiques
  #   La couleur et la minute dont elles apparaîssent, i.e. une couleur à 8 minutes qui passe à une autre à 18 minutes.
  #   Est une liste, chaque couleur étant dénoncée par un nom ou une code RGB/hex.  Veuillez consultez la liste si-dessus.  Écrit comme 'couleur/minute'.
- #   Ça passera à la dernière couleur à la fin de la liste ; si il n'y existe qu'une couleur, ça passera à gris.
+ #   Ça passera à la dernière couleur à la fin de la liste ; si il n’y existe qu’une couleur, ça passera à gris.
  # lore : Liste de texte supplémentaire sur la potion de base. (Codes de format sont possible : tels que &6)
- # customModelData : Custom Model Data Tag.  Un numéro qui peut être utiliser pour personnaliser l'apparence des boissons en utilisant un « texture pack ».
+ # customModelData : Custom Model Data Tag.  Un numéro qui peut être utiliser pour personnaliser l’apparence des boissons en utilisant un « texture pack ».
 
 cauldron:
   #  Exemple avec tous les paramètres possibles :
@@ -202,7 +202,7 @@ cauldron:
       - '800000/25' # Maron
     lore:
       - Un exemple pour une potion de base
-      - Voici comment il sort d'un chaudron
+      - Voici comment il sort d’un chaudron
     customModelData: 545
 
   # -- Un ingrédient: --
@@ -218,7 +218,7 @@ cauldron:
     color: 'f1ffad' # Vert jaunâtre
     cookParticles:
       - 'f1ffad/4'
-      - '858547/10' # Vert d'olive foncé
+      - '858547/10' # Vert d’olive foncé
 
   sugar:
     name: Eau sucrée
@@ -250,7 +250,7 @@ cauldron:
     color: '99ff66' # Vert vif
     cookParticles:
       - 'GREEN/2'
-      - '99ff99/20' # Vert délave
+      - '99ff99/20' # Vert délavé
 
   rmushroom:
     name: Champignons fermentés
@@ -424,7 +424,7 @@ cauldron:
       - '00ccff/5'
 
   eggnog_base:
-    name: Mélange d'œufs lisse
+    name: Mélange d’œufs lisse
     ingredients:
       - egg
       - sugar
@@ -439,7 +439,7 @@ cauldron:
 # name : Différents noms pour la mauvaise/moyen/bonne qualité (Les codes de mise en forme sont pris en charge : comme par exemple &6 pour la couleur Or.)
 # ingredients : Liste des 'matériaux/montant'
 #   Avec un objet en main, utilisez /brew ItemName pour obtenir son matériau pour une recette de cuisine
-#   (Les id d'objets à la place des matériaux sont obsolètes pour bukkit)
+#   (Les id d’objets à la place des matériaux sont obsolètes pour bukkit)
 #     Ex : 'Sugar_Cane'
 #   Une liste des matériaux peuvent-être trouvés ici : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #   Plugin items avec 'plugin:id' (Actuellement supporté ExoticGarden, Slimefun, MMOItems, Brewery)
@@ -449,31 +449,31 @@ cauldron:
 # distilltime : Combien de temps (en secondes) dure une distillation (0=Temps par défaut de 40 secondes) MC Par défaut serait de 20 secondes
 # wood : Type de bois du baril 0=aucun 1=Bouleau 2=Chêne 3=Jungle 4=Pin 5=Acacia 6=Chêne Noir 7=Crimson 8=Warped 9=Mangrove 10=Cerisier 11=Bambou (12=Cuivre coupé)
 #   Le tonneau Minecraft est en chêne.
-# age : Temps en jours de Minecraft, la potion devra être âgée dans un baril. 0=Pas besoin d'âge
+# age : Temps en jours de Minecraft, la potion devra être âgée dans un baril. 0=Pas besoin d’âge
 # color : Couleur de la potion après distillation/avoir laissé vieillir.
   #   Couleurs disponibles : DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
-  #     (Dans l'ordre : Rouge foncé, Rouge, Rouge clair, Orange, Jaune, Rose, Pourpre, Bleu, Cyan, Eau, Sarcelle, Olive, Vert, Vert lime, Noir, Gris, Gris clair, Blanc)
-#   Ou couleurs RGB (hex : par exemple '99FF33') (avec '') (recherche de « couleur HTML » sur l'internet)
+  #     (Dans l’ordre : Rouge foncé, Rouge, Rouge clair, Orange, Jaune, Rose, Pourpre, Bleu, Cyan, Eau, Sarcelle, Olive, Vert, Vert lime, Noir, Gris, Gris clair, Blanc)
+#   Ou couleurs RGB (hex : par exemple '99FF33') (avec '') (recherche de « couleur HTML » sur l’internet)
 # difficulty : 1-10 précision nécessaire pour obtenir une bonne qualité (1 = imprécis/facile, 10 = très précis/difficile)
-# alcohol : Le montant d'alcool absolu dans une boisson parfaite (cela sera ajouté directement au joueur, où 100% entraînera l'évanouissement), un degré d'alcooléisme en fait
+# alcohol : Le montant d’alcool absolu dans une boisson parfaite (cela sera ajouté directement au joueur, où 100% entraînera l’évanouissement), un degré d’alcooléisme en fait
 # lore : Liste des textes supplémentaires sur le breuvage fini. (Codes de formatage possibles : tels que &6)
-#   Texte spécifique de qualité possible, en utilisant + mauvais, ++ normal, +++ bon, ajouté à l'avant de la ligne.
+#   Texte spécifique de qualité possible, en utilisant + mauvais, ++ normal, +++ bon, ajouté à l’avant de la ligne.
 # servercommands : Liste des commandes exécutées par le -serveur- lors de la consommation de la potion (Peut utiliser %player_name%  %quality%)
 # playercommands : Liste des commandes exécutées par le -joueur- lors de la consommation de la potion (Peut utiliser %player_name%  %quality%)
-#   Texte spécifique de qualité possible, en utilisant + mauvais, ++ normal, +++ bon, ajouté à l'avant de la ligne.
-# drinkmessage : Chat-message au joueur lorsqu'il boit la potion
-# drinktitle : Titre à l'écran du joueur lorsqu'il boit la potion
+#   Texte spécifique de qualité possible, en utilisant + mauvais, ++ normal, +++ bon, ajouté à l’avant de la ligne.
+# drinkmessage : Chat-message au joueur lorsqu’il boit la potion
+# drinktitle : Titre à l’écran du joueur lorsqu’il boit la potion
 # glint : Boolean if the item should have a glint (enchant glint)
 # customModelData : Custom Model Data Tag. This is a number that can be used to add custom textures to the item.
 #   Can specify one for all, or one for each quality, separated by /
 # effects : Liste des effets/durée en secondes lors de la consommation.
 #   Effets posssible : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
-#   POUR LES EFFETS EN FONCTIONS DE LA QUALITE : Les Niveaux (I ou II) ou les Intervalles de durées d'effets doivent être spécifiés avec un « - ».
+#   POUR LES EFFETS EN FONCTIONS DE LA QUALITE : Les Niveaux (I ou II) ou les Intervalles de durées d’effets doivent être spécifiés avec un « - ».
 #       Ex : 'SPEED/1-2/30-40' => Vitesse niveau 1 et durée de 30 sec pour la pire qualité, et niveau 2 et durée de 40 sec pour la meilleure.
-#     Il est aussi possible de faire l'inverse, c'est à dire que le schéma « Meilleure qualité, meilleur effets » soit « Meilleure qualité, effets moins puissants.
-#     Cela peut-être utile pour des potions avec l'effet poison pour empoisonner moins avec une bonne qualité.
+#     Il est aussi possible de faire l’inverse, c’est à dire que le schéma « Meilleure qualité, meilleur effets » soit « Meilleure qualité, effets moins puissants.
+#     Cela peut-être utile pour des potions avec l’effet poison pour empoisonner moins avec une bonne qualité.
 #       Ex : 'POISON/3-1/20-5' => Poison de niveau 3 durant 20 sec à la moins bonne qualité et de niveau 1 et de durée 5 sec à la meilleure.
-#     Durées possibles maximum : 1638 sec. Les effets instantanés n'ont pas besoin d'avoir une durée spécifiée (Ex : Les potions de Soin instantané).
+#     Durées possibles maximum : 1638 sec. Les effets instantanés n’ont pas besoin d’avoir une durée spécifiée (Ex : Les potions de Soin instantané).
 
 recipes:
 #  Exemple de recette avec tous les paramètres possibles :
@@ -495,7 +495,7 @@ recipes:
     difficulty: 3
     alcohol: 14
     lore:
-      - C'est un boisson d'exemple
+      - C’est un boisson d’exemple
       - ++Juste un exemple normal
       - Ce texte serait sur le boisson
       - + Ça sent dégueulasse.
@@ -506,8 +506,8 @@ recipes:
       - + weather rain
     playercommands:
       - homes
-    drinkmessage: C'est bon au goût
-    drinktitle: Ça vous réchauffe à l'intérieur
+    drinkmessage: C’est bon au goût
+    drinktitle: Ça vous réchauffe à l’intérieur
     customModelData: 556/557/557
     effects:
       - FIRE_RESISTANCE/20
@@ -630,7 +630,7 @@ recipes:
     difficulty: 5
     alcohol: 14
     lore:
-      - +Aigre comme l'acide
+      - +Aigre comme l’acide
       - +++Bonne liqueur de pomme
 
   whiskey:
@@ -789,7 +789,7 @@ recipes:
       - SPEED/1/30-140
 
   eggnog:
-    name: Liqueur d'oeuf/Liqueur d'œuf/Advocaat
+    name: Liqueur d’oeuf/Liqueur d’œuf/Advocaat
     ingredients:
       - Egg/5
       - Sugar/2
@@ -803,8 +803,8 @@ recipes:
     lore: Avec des œufs crus
 
 
-# L'on ne veux pas ajouter plus de recettes à la configuration par défaut, car elles seront publiques et visibles par tous les utilisateurs et les joueurs pourraient donc tricher en les voyant.
-# Ce sera aux administrateurs des serveurs de changer et d'ajouter les recettes, ainsi les joueurs ne pourront pas tricher avec les configuration de base.
+# L’on ne veux pas ajouter plus de recettes à la configuration par défaut, car elles seront publiques et visibles par tous les utilisateurs et les joueurs pourraient donc tricher en les voyant.
+# Ce sera aux administrateurs des serveurs de changer et d’ajouter les recettes, ainsi les joueurs ne pourront pas tricher avec les configuration de base.
 
 # Voici quelques suggestions de recettes que vous pourriez utiliser:
 
@@ -888,7 +888,7 @@ recipes:
 # -- Compatibilité entre Plugins --
 
 # Activer la vérification des autres plugins (si installés) pour les permissions des tonneaux. [true]
-# Les plug-ins « Landlord » et « Protection Stones » utilisent l'option WorldGuard.  « ClaimChunk » est pris en charge nativement.
+# Les plug-ins « Landlord » et « Protection Stones » utilisent l’option WorldGuard.  « ClaimChunk » est pris en charge nativement.
 useWorldGuard: true
 useLWC: true
 useGriefPrevention: true
@@ -897,22 +897,22 @@ useBlockLocker: true
 useGMInventories: true
 
 # Si un coffre « virtuel » ou imaginaire est utilisé pour vérifier avec tous autres plug-ins de protection.
-# Ceci pourrait peut-être confondre certains plug-ins anti-tirche.  À part ça, c'est bon et sûr à y utiliser.
+# Ceci pourrait peut-être confondre certains plug-ins anti-tirche.  À part ça, c’est bon et sûr à y utiliser.
 # Utilisez-le pour les plug-ins types « résidence » et ceux qui ne vérifient pas tous les cas « PlayerInteractEvent ».
 useVirtualChestPerms: false
 
-# Activer l'historique du contenu des tonneaux avec LogBlock [true]
+# Activer l’historique du contenu des tonneaux avec LogBlock [true]
 useLogBlock: true
 
 
 # -- MultiServer/BungeeCord --
 # Si Brewery est exécuté sur plusieurs serveurs connectés (via BungeeCord), une base de données partagée peut être utilisée
-# ici pour synchroniser l'ivresse et pour pouvoir utiliser des boissons codées entre elles.
+# ici pour synchroniser l’ivresse et pour pouvoir utiliser des boissons codées entre elles.
 
 multiServerDB:
-  # Si l'utilisation de la base de données est activée
+  # Si l’utilisation de la base de données est activée
   enabled: false
-  # Si l'ivresse des joueurs devait être synchronisée entre les serveurs
+  # Si l’ivresse des joueurs devait être synchronisée entre les serveurs
   syncDrunkeness: true
   host: localhost
   port: '3306'
@@ -929,24 +929,24 @@ useOffhandForCauldron: false
 # Si les données des fûts et des chaudrons peuvent être chargés de manière asynchrone ou en arrière-plan [true]
 loadDataAsync: true
 
-# Temps (en jours) pour que les données d'ivresse restent sauvergardées lorsque le joueur est déconnecté, pour appliquer les effets. [7]
+# Temps (en jours) pour que les données d’ivresse restent sauvergardées lorsque le joueur est déconnecté, pour appliquer les effets. [7]
 hangoverDays: 7
 
-# Colorer les informations d'objets (lore) au dépend de la qualité dans un tonneau et/ou dans un stand de brassage (l'alambic) [true, true]
+# Colorer les informations d’objets (lore) au dépend de la qualité dans un tonneau et/ou dans un stand de brassage (l’alambic) [true, true]
 colorInBarrels: true
 colorInBrewer: true
 
-# Si le grand tonneau peut être ouvert en cliquant sur n'importe quel bloc, non seulement le robinet ou le panneau. Toujours « true » pour les petits tonneaux. [true]
+# Si le grand tonneau peut être ouvert en cliquant sur n’importe quel bloc, non seulement le robinet ou le panneau. Toujours « true » pour les petits tonneaux. [true]
 openLargeBarrelEverywhere: true
 
-# Permettre l'élimination de boissons à l'interieur d'une trémie mais en conservant la bouteille [true]
+# Permettre l’élimination de boissons à l’interieur d’une trémie mais en conservant la bouteille [true]
 brewHopperDump: true
 
 
 # -- Paramètres de la distorsion du chat --
 
-# Si le chat écrit est déformé quand le joueur est ivre, de sorte qu'il ressemble à un chat bourré en train d'écrire
-# Le degré de distorsion du chat dépend de l'état d'ébriété du joueur
+# Si le chat écrit est déformé quand le joueur est ivre, de sorte qu’il ressemble à un chat bourré en train d’écrire
+# Le degré de distorsion du chat dépend de l’état d’ébriété du joueur
 # Ci-dessous sont les paramètres pour ce qui et comment les changements dans le chat se produisent
 enableChatDistortion: true
 
@@ -974,7 +974,7 @@ distortCommands:
 - /t
 - /tell
 
-# Distordre le texte sur les panneaux pendant l'ivresse [false]
+# Distordre le texte sur les panneaux pendant l’ivresse [false]
 distortSignText: false
 
 # Entourer les textes avec ces caractères pour ignorer la distorsion (utilisez « , » comme un séparateur) (liste) [- '[,]']
@@ -983,14 +983,14 @@ distortBypass:
 - '*,*'
 - '[,]'
 
-# words : Les mots et les lettres altérées dans le chat lors d'un état d'ivresse.
-# Commence du haut jusqu'au bas. Les phrases sont altérées par l'ordre écrit.
+# words : Les mots et les lettres altérées dans le chat lors d’un état d’ivresse.
+# Commence du haut jusqu’au bas. Les phrases sont altérées par l’ordre écrit.
 
-# replace : Mot ou lettre à remplacer (Spécial: « -space » : remplace les espaces, « -random » : s'insère dans une position aléatoire, « -all » : toute la ligne, « -start » : au début, « -end » : à la fin.)
+# replace : Mot ou lettre à remplacer (Spécial: « -space » : remplace les espaces, « -random » : s’insère dans une position aléatoire, « -all » : toute la ligne, « -start » : au début, « -end » : à la fin.)
 # to : Ce qui remplacera.
 # pre : Les mots et les lettres avant le mot désiré (séparez avec « , »)
-# match : true = Si un des mots « pre » est nécessaire avant le mot désiré, false = Aucun des mots « pre » n'est autorisé avant le mot désiré.
-# alcohol : 1-100 Le montant minimal d'alcool pour que la distorsion fonctionne.
+# match : true = Si un des mots « pre » est nécessaire avant le mot désiré, false = Aucun des mots « pre » n’est autorisé avant le mot désiré.
+# alcohol : 1-100 Le montant minimal d’alcool pour que la distorsion fonctionne.
 # percentage : Probabilité en pourcentage que le mot soit remplacé.
 
 words:
